@@ -1,0 +1,88 @@
+/*main style*/
+#calculator {
+	background-color: #F9C673;
+	padding: 40px;
+	margin: 10px;
+	border-radius: 15px 50px;
+	width: 60%;
+	
+}
+
+
+/*form elements*/
+/*without Bootstrap*/
+input{
+	display: inline;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	padding: 2px 2px;
+}
+select {
+	display: inline;
+	width: 140px;
+	height: 30px;
+	padding: 2px 2px;	
+}
+#submit, #inversionBt {
+	display: inline;
+	height: 30px;
+	padding: 2px 2px;
+}
+#inversionBt {
+	width: 45px;
+	display: inline;
+}
+/*Bootstrap*/
+input.form-control{
+	display: inline;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	padding: 2px 2px;
+}
+select.form-control {
+	display: inline;
+	width: 140px;
+	height: 30px;
+	padding: 2px 2px;	
+}
+#submit.form-control, #inversionBt.form-control {
+	display: inline;
+	height: 30px;
+	padding: 2px 2px;
+}
+#inversionBt.form-control {
+	width: 45px;
+	display: inline;
+}
+
+/*output result format*/
+#result {
+	display: none;
+	background-color: #8892BF; /*#5E96B7*/
+	border-radius: 15px;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+#result.display {
+	display: block;
+}
+
+/*errors format*/
+#errorMessage {
+	color: red;
+}
+#errorMessage ul {
+	list-style-type: none;
+}
+
+/*responsive design*/
+@media (max-width: 800px) {
+	
+	#calculator {
+		width: 95%;	
+	}
+}
